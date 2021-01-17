@@ -1,7 +1,7 @@
 function main(config)
   
-  r = 10e3
-  c = 0.3e-9
+  r = 10e3;
+  c = 0.3e-9;
   
   freqs = generateFrequencyRanges();
   omegas = calculateOmegas(freqs);

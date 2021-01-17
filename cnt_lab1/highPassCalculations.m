@@ -9,7 +9,7 @@ function highPassCalculations(omegas, r, c, v1, config)
   # calculated
   phidmsCalculated = calculatePhaseDifference(omegas, r, c, config);
   tsmsCalculated = calculateTransferFunction(omegas, r, c, config);
-  aphisCalculated = aPhiOfOmega(tsmsCalculated)
+  aphisCalculated = aPhiOfOmega(tsmsCalculated);
   
   plotData(omegas, aphisMeasured, aphisCalculated)
 endfunction
