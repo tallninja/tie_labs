@@ -11,5 +11,9 @@ function highPassCalculations(omegas, r, c, v1, config)
   tsmsCalculated = calculateTransferFunction(omegas, r, c, config);
   aphisCalculated = aPhiOfOmega(tsmsCalculated);
   
-  plotData(omegas, aphisMeasured, aphisCalculated)
+  figure(1)
+  plotData(omegas, aphisMeasured, aphisCalculated);
+  figure(2)
+  plotPhiData(omegas, phidmsMeasured, phidmsCalculated);
+  
 endfunction

@@ -5,7 +5,7 @@ function phidms = calculatePhaseDifference(Ws, r, c, config)
       case 'highpass'
         phidms(i) = atand(rad2deg(1 / (Ws(i) * r * c)));
       case 'lowpass'
-        phidms(i) = -atand(rad2deg(Ws(i) * r * c));
+        phidms(i) = atand(rad2deg(Ws(i) * r * c));
       otherwise
         return
     endswitch
